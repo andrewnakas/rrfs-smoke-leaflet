@@ -1,20 +1,1297 @@
 {
-  "generatedAt": "2026-03-13T18:00:00Z",
-  "runtime": null,
-  "runtimeSource": "pending-raw-render",
+  "generatedAt": "2026-03-13T22:56:19.203503+00:00",
+  "runtime": "2026031321",
+  "runtimeSource": "aws-noaa-rrfs-direct-byte-range",
+  "modes": {
+    "hourly": {
+      "runtime": "2026031321",
+      "maxFrame": 0,
+      "bounds": null,
+      "logs": [
+        "discovered runtime 2026031321 from RRFS S3 listing",
+        "using runtime 2026031321 via RRFS S3 idx byte ranges (hourly)",
+        "failed trc1_full_sfc F000: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F001: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F002: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F003: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F004: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F005: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F006: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F007: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F008: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F009: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F010: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F011: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F012: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F013: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F014: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F015: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F016: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F017: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F018: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_int F000: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F001: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F002: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F003: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F004: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F005: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F006: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F007: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F008: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F009: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F010: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F011: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F012: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F013: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F014: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F015: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F016: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F017: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F018: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+      ],
+      "layers": {
+        "trc1_full_sfc": {
+          "label": "Near-surface smoke",
+          "units": "kg/m^3",
+          "frames": [
+            {
+              "frame": 0,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 1,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 2,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 3,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 4,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 5,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 6,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 7,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 8,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 9,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 10,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 11,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 12,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 13,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 14,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 15,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 16,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 17,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 18,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            }
+          ],
+          "availableFrames": []
+        },
+        "trc1_full_int": {
+          "label": "Vertically integrated smoke",
+          "units": "kg/m^2",
+          "frames": [
+            {
+              "frame": 0,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 1,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 2,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 3,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 4,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 5,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 6,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 7,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 8,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 9,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 10,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 11,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 12,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 13,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 14,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 15,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 16,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 17,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 18,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            }
+          ],
+          "availableFrames": []
+        }
+      }
+    },
+    "long": {
+      "runtime": "2026031318",
+      "maxFrame": 0,
+      "bounds": null,
+      "logs": [
+        "discovered runtime 2026031318 from RRFS S3 listing",
+        "using runtime 2026031318 via RRFS S3 idx byte ranges (long)",
+        "failed trc1_full_sfc F000: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F001: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F002: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F003: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F004: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F005: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F006: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F007: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F008: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F009: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F010: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F011: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F012: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F013: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F014: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F015: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F016: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F017: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F018: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F019: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F020: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F021: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F022: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F023: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F024: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F025: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F026: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F027: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F028: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F029: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F030: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F031: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F032: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F033: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F034: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F035: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F036: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F037: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F038: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F039: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F040: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F041: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F042: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F043: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F044: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F045: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F046: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F047: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_sfc F048: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+        "failed trc1_full_int F000: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F001: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F002: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F003: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F004: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F005: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F006: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F007: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F008: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F009: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F010: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F011: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F012: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F013: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F014: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F015: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F016: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F017: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F018: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F019: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F020: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F021: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F022: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F023: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F024: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F025: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F026: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F027: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F028: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F029: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F030: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F031: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F032: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F033: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F034: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F035: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F036: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F037: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F038: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F039: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F040: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F041: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F042: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F043: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F044: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F045: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F046: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F047: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+        "failed trc1_full_int F048: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+      ],
+      "layers": {
+        "trc1_full_sfc": {
+          "label": "Near-surface smoke",
+          "units": "kg/m^3",
+          "frames": [
+            {
+              "frame": 0,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 1,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 2,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 3,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 4,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 5,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 6,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 7,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 8,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 9,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 10,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 11,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 12,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 13,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 14,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 15,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 16,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 17,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 18,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 19,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 20,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 21,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 22,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 23,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 24,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 25,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 26,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 27,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 28,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 29,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 30,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 31,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 32,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 33,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 34,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 35,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 36,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 37,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 38,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 39,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 40,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 41,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 42,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 43,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 44,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 45,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 46,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 47,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            },
+            {
+              "frame": 48,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+            }
+          ],
+          "availableFrames": []
+        },
+        "trc1_full_int": {
+          "label": "Vertically integrated smoke",
+          "units": "kg/m^2",
+          "frames": [
+            {
+              "frame": 0,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 1,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 2,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 3,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 4,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 5,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 6,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 7,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 8,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 9,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 10,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 11,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 12,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 13,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 14,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 15,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 16,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 17,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 18,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 19,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 20,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 21,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 22,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 23,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 24,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 25,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 26,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 27,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 28,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 29,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 30,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 31,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 32,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 33,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 34,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 35,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 36,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 37,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 38,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 39,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 40,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 41,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 42,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 43,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 44,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 45,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 46,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 47,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            },
+            {
+              "frame": 48,
+              "url": null,
+              "cached": false,
+              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+            }
+          ],
+          "availableFrames": []
+        }
+      }
+    }
+  },
   "maxFrame": 0,
-  "bounds": [[21.5, -129.5], [52.5, -61.0]],
-  "logs": ["Raw RRFS renderer not run yet in this checkout."],
+  "bounds": null,
   "layers": {
     "trc1_full_sfc": {
       "label": "Near-surface smoke",
-      "frames": [],
+      "units": "kg/m^3",
+      "frames": [
+        {
+          "frame": 0,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 1,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 2,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 3,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 4,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 5,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 6,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 7,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 8,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 9,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 10,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 11,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 12,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 13,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 14,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 15,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 16,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 17,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        },
+        {
+          "frame": 18,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+        }
+      ],
       "availableFrames": []
     },
     "trc1_full_int": {
       "label": "Vertically integrated smoke",
-      "frames": [],
+      "units": "kg/m^2",
+      "frames": [
+        {
+          "frame": 0,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 1,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 2,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 3,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 4,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 5,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 6,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 7,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 8,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 9,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 10,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 11,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 12,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 13,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 14,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 15,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 16,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 17,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        },
+        {
+          "frame": 18,
+          "url": null,
+          "cached": false,
+          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        }
+      ],
       "availableFrames": []
     }
-  }
+  },
+  "logs": [
+    "discovered runtime 2026031321 from RRFS S3 listing",
+    "using runtime 2026031321 via RRFS S3 idx byte ranges (hourly)",
+    "failed trc1_full_sfc F000: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F001: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F002: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F003: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F004: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F005: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F006: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F007: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F008: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F009: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F010: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F011: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F012: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F013: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F014: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F015: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F016: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F017: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_sfc F018: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
+    "failed trc1_full_int F000: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F001: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F002: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F003: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F004: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F005: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F006: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F007: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F008: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F009: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F010: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F011: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F012: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F013: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F014: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F015: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F016: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F017: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
+    "failed trc1_full_int F018: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+  ]
 }

@@ -25,8 +25,14 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: requirements-pipeline.txt
       - run: npm ci
-      - run: npm run update-manifest
+      - run: python -m pip install -r requirements-pipeline.txt
+      - run: npm run render-raw-smoke
       - name: Commit refreshed smoke cache
         run: |
           if ! git diff --quiet public; then

@@ -1,41 +1,33 @@
 # rrfs-smoke-leaflet
 
-Leaflet-based viewer for RRFS Smoke/Dust graphics, suitable for GitHub Pages.
-
-## What it does
-
-- pulls recent RRFS Smoke/Dust PNG graphics from NOAA Rapid Refresh
-- caches them into `public/cache`
-- writes a `public/latest.json` manifest
-- serves an animated Leaflet viewer over those cached frames
+Leaflet-based viewer for RRFS smoke, deployed via GitHub Pages.
 
 ## Current architecture
 
-This version mirrors the current `hrrr-smoke-leaflet` app structure, but targets the experimental **RRFS-SD** graphics feed instead of HRRR smoke.
+This version now aims to render **raw RRFS smoke fields** into transparent PNG overlays instead of scraping NOAA's pre-rendered website graphics.
 
 Pipeline:
 
-1. fetch RRFS-SD index from `https://rapidrefresh.noaa.gov/RRFS-SD/`
-2. resolve a recent runtime
-3. download smoke overlay PNGs for supported layers
-4. cache them under `public/cache/<runtime>/<layer>/`
-5. serve them via Vite / GitHub Pages
-
-## Supported layers
-
-- `trc1_full_sfc` — near-surface smoke
-- `trc1_full_int` — vertically integrated smoke
+1. GitHub Actions opens recent RRFS prototype data from AWS using Herbie
+2. reads smoke fields for:
+   - near-surface smoke (`MASSDEN` for dry particulate organic matter <2.5μm at 8 m AGL)
+   - vertically integrated smoke (`COLMD` for dry particulate organic matter <2.5μm)
+3. reprojects them to EPSG:4326
+4. writes transparent PNG overlays into `public/cache-raw`
+5. deploys the app to GitHub Pages
 
 ## Local development
 
 ```bash
 npm install
-npm run update-manifest
+python3 -m pip install -r requirements-pipeline.txt
+npm run render-raw-smoke
 npm run dev
 ```
 
 ## Notes
 
-- Source archive: NOAA Rapid Refresh experimental RRFS Smoke/Dust graphics
-- This app currently follows the same cache-and-manifest approach as the HRRR repo rather than rendering raw RRFS fields locally.
-- If NOAA changes the RRFS-SD graphic path layout or field names, update `scripts/update-noaa-manifest.mjs`.
+- Source archive: NOAA RRFS prototype data on AWS
+- This avoids depending on the flaky RRFS-SD website image paths.
+- The repo still keeps the simple Leaflet overlay viewer from the original HRRR app.
+- If RRFS field metadata changes, update the search strings in `scripts/render-rrfs-smoke.py`.

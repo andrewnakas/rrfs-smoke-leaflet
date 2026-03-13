@@ -38,7 +38,7 @@ LAYERS = {
 
 
 def latest_cycle_utc(now=None):
-    now = now or datetime.now(timezone.utc)
+    now = now or datetime.utcnow()
     cycle_hour = (now.hour // 3) * 3
     return now.replace(hour=cycle_hour, minute=0, second=0, microsecond=0)
 

@@ -9,6 +9,7 @@ This version now aims to render **raw RRFS smoke fields** into transparent PNG o
 Pipeline:
 
 1. GitHub Actions opens recent RRFS prototype data from AWS using Herbie
+   - if RRFS has no index file for a run, the workflow downloads the full GRIB and reopens it locally
 2. reads smoke fields for:
    - near-surface smoke (`MASSDEN` for dry particulate organic matter <2.5μm at 8 m AGL)
    - vertically integrated smoke (`COLMD` for dry particulate organic matter <2.5μm)

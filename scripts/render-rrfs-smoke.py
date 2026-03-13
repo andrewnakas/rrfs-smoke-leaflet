@@ -38,7 +38,7 @@ LAYERS = {
 
 
 def latest_cycle_utc(now=None):
-    now = now or datetime.utcnow()
+    now = now or datetime.now(timezone.utc).replace(tzinfo=None)
     cycle_hour = (now.hour // 3) * 3
     return now.replace(hour=cycle_hour, minute=0, second=0, microsecond=0)
 
@@ -55,8 +55,7 @@ def cycle_candidates(long_only=False):
 def herbie_open(run_dt, fxx, search):
     from herbie import Herbie
 
-    H = Herbie(
-        run_dt,
+    kwargs = dict(
         model='rrfs',
         product='nat',
         fxx=fxx,
@@ -67,6 +66,18 @@ def herbie_open(run_dt, fxx, search):
         verbose=False,
         overwrite=False,
     )
+
+    H = Herbie(run_dt, **kwargs)
+    try:
+        ds = H.xarray(search=search, remove_grib=False)
+        return H, ds
+    except Exception as e:
+        msg = str(e)
+        if 'No index file was found' not in msg:
+            raise
+
+    H.download()
+    H = Herbie(run_dt, **kwargs)
     ds = H.xarray(search=search, remove_grib=False)
     return H, ds
 

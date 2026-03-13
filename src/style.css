@@ -1,0 +1,40 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, sans-serif;
+  background: #09111f;
+  color: #eef4ff;
+}
+* { box-sizing: border-box; }
+html, body, #app { margin: 0; min-height: 100vh; }
+body { background: linear-gradient(180deg, #09111f, #0f1d35); }
+a { color: #9fd1ff; }
+button, select, input {
+  font: inherit;
+  border-radius: 10px;
+  border: 1px solid #31415f;
+  background: #13233f;
+  color: #eef4ff;
+  padding: 0.7rem 0.85rem;
+}
+button { cursor: pointer; }
+#app { display: grid; grid-template-columns: 380px 1fr; }
+.sidebar { padding: 1rem; border-right: 1px solid rgba(255,255,255,0.08); background: rgba(7, 12, 24, 0.9); overflow: auto; max-height: 100vh; }
+.sidebar h1 { margin: 0 0 0.5rem; font-size: 1.6rem; }
+.lede, .notes, .status { color: #c8d7f1; }
+.controls { display: grid; gap: 0.9rem; margin: 1rem 0; }
+.controls label { display: grid; gap: 0.35rem; font-size: 0.95rem; }
+.frame-row, .button-row, .console-actions { display: flex; gap: 0.75rem; align-items: center; justify-content: space-between; }
+.status { border: 1px solid rgba(159, 209, 255, 0.25); background: rgba(159, 209, 255, 0.08); border-radius: 12px; padding: 0.9rem; }
+.diagnostics { margin-top: 1rem; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 0.9rem; background: rgba(255,255,255,0.03); color: #d9e5fb; display: grid; gap: 0.45rem; }
+.main { position: relative; min-height: 100vh; }
+#map { height: 100vh; width: 100%; }
+.leaflet-container { background: #d7e3f4; }
+.map-badge { background: rgba(7, 12, 24, 0.82); color: #eef4ff; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 0.6rem 0.8rem; box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
+.console-wrap { margin-top: 1rem; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 0.8rem; background: rgba(255,255,255,0.03); }
+.debug-console { margin: 0.8rem 0 0; min-height: 220px; max-height: 320px; overflow: auto; padding: 0.8rem; border-radius: 10px; background: #07111f; color: #b9f3c3; font: 12px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre-wrap; }
+@media (max-width: 980px) {
+  #app { grid-template-columns: 1fr; }
+  .sidebar { border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.08); max-height: none; }
+  .main { min-height: 75vh; }
+  #map { height: 75vh; }
+}

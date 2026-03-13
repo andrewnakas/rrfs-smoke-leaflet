@@ -1,0 +1,337 @@
+{
+  "generatedAt": "2026-03-13T18:14:26.172Z",
+  "runtime": "2026031311",
+  "runtimeSource": "rapidrefresh-noaa-rrfs-sd (previous-manifest)",
+  "bounds": [
+    [
+      21.5,
+      -129.5
+    ],
+    [
+      52.5,
+      -61
+    ]
+  ],
+  "maxFrame": 18,
+  "logs": [
+    "runtime 2026031311 (previous-manifest)",
+    "failed trc1_full_sfc F001 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F000 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F003 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F004 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F001 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F000 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F006 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F007 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F003 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F004 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F008 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F009 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F006 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F007 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F010 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F011 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F008 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F009 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F012 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F013 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F010 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F011 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F014 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F015 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F012 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F016 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F013 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F017 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F014 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F015 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F018 attempt 1: HTTP 404",
+    "failed trc1_full_sfc F016 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F017 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F018 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F002 attempt 1: fetch failed",
+    "failed trc1_full_sfc F005 attempt 1: fetch failed",
+    "failed trc1_full_sfc F002 attempt 2: HTTP 404",
+    "failed trc1_full_sfc F005 attempt 2: fetch failed",
+    "failed trc1_full_int F001 attempt 1: HTTP 404",
+    "failed trc1_full_int F005 attempt 1: HTTP 404",
+    "failed trc1_full_int F004 attempt 1: HTTP 404",
+    "failed trc1_full_int F001 attempt 2: HTTP 404",
+    "failed trc1_full_int F004 attempt 2: HTTP 404",
+    "failed trc1_full_int F005 attempt 2: HTTP 404",
+    "failed trc1_full_int F007 attempt 1: HTTP 404",
+    "failed trc1_full_int F008 attempt 1: HTTP 404",
+    "failed trc1_full_int F006 attempt 1: HTTP 404",
+    "failed trc1_full_int F007 attempt 2: HTTP 404",
+    "failed trc1_full_int F008 attempt 2: HTTP 404",
+    "failed trc1_full_int F006 attempt 2: HTTP 404",
+    "failed trc1_full_int F009 attempt 1: HTTP 404",
+    "failed trc1_full_int F010 attempt 1: HTTP 404",
+    "failed trc1_full_int F011 attempt 1: HTTP 404",
+    "failed trc1_full_int F011 attempt 2: HTTP 404",
+    "failed trc1_full_int F009 attempt 2: HTTP 404",
+    "failed trc1_full_int F010 attempt 2: HTTP 404",
+    "failed trc1_full_int F013 attempt 1: HTTP 404",
+    "failed trc1_full_int F014 attempt 1: HTTP 404",
+    "failed trc1_full_int F012 attempt 1: HTTP 404",
+    "failed trc1_full_int F013 attempt 2: HTTP 404",
+    "failed trc1_full_int F014 attempt 2: HTTP 404",
+    "failed trc1_full_int F012 attempt 2: HTTP 404",
+    "failed trc1_full_int F015 attempt 1: HTTP 404",
+    "failed trc1_full_int F016 attempt 1: HTTP 404",
+    "failed trc1_full_int F017 attempt 1: HTTP 404",
+    "failed trc1_full_int F015 attempt 2: HTTP 404",
+    "failed trc1_full_int F016 attempt 2: HTTP 404",
+    "failed trc1_full_int F017 attempt 2: HTTP 404",
+    "failed trc1_full_int F018 attempt 1: HTTP 404",
+    "failed trc1_full_int F018 attempt 2: HTTP 404",
+    "failed trc1_full_int F000 attempt 1: fetch failed",
+    "failed trc1_full_int F002 attempt 1: fetch failed",
+    "failed trc1_full_int F003 attempt 1: fetch failed",
+    "failed trc1_full_int F002 attempt 2: HTTP 404",
+    "failed trc1_full_int F000 attempt 2: fetch failed",
+    "failed trc1_full_int F003 attempt 2: fetch failed"
+  ],
+  "layers": {
+    "trc1_full_sfc": {
+      "label": "Near-surface smoke",
+      "frames": [
+        {
+          "frame": 0,
+          "url": "./cache/2026031311/trc1_full_sfc/f000.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f000.png",
+          "cached": false
+        },
+        {
+          "frame": 1,
+          "url": "./cache/2026031311/trc1_full_sfc/f001.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f001.png",
+          "cached": false
+        },
+        {
+          "frame": 2,
+          "url": "./cache/2026031311/trc1_full_sfc/f002.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f002.png",
+          "cached": false
+        },
+        {
+          "frame": 3,
+          "url": "./cache/2026031311/trc1_full_sfc/f003.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f003.png",
+          "cached": false
+        },
+        {
+          "frame": 4,
+          "url": "./cache/2026031311/trc1_full_sfc/f004.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f004.png",
+          "cached": false
+        },
+        {
+          "frame": 5,
+          "url": "./cache/2026031311/trc1_full_sfc/f005.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f005.png",
+          "cached": false
+        },
+        {
+          "frame": 6,
+          "url": "./cache/2026031311/trc1_full_sfc/f006.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f006.png",
+          "cached": false
+        },
+        {
+          "frame": 7,
+          "url": "./cache/2026031311/trc1_full_sfc/f007.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f007.png",
+          "cached": false
+        },
+        {
+          "frame": 8,
+          "url": "./cache/2026031311/trc1_full_sfc/f008.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f008.png",
+          "cached": false
+        },
+        {
+          "frame": 9,
+          "url": "./cache/2026031311/trc1_full_sfc/f009.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f009.png",
+          "cached": false
+        },
+        {
+          "frame": 10,
+          "url": "./cache/2026031311/trc1_full_sfc/f010.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f010.png",
+          "cached": false
+        },
+        {
+          "frame": 11,
+          "url": "./cache/2026031311/trc1_full_sfc/f011.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f011.png",
+          "cached": false
+        },
+        {
+          "frame": 12,
+          "url": "./cache/2026031311/trc1_full_sfc/f012.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f012.png",
+          "cached": false
+        },
+        {
+          "frame": 13,
+          "url": "./cache/2026031311/trc1_full_sfc/f013.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f013.png",
+          "cached": false
+        },
+        {
+          "frame": 14,
+          "url": "./cache/2026031311/trc1_full_sfc/f014.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f014.png",
+          "cached": false
+        },
+        {
+          "frame": 15,
+          "url": "./cache/2026031311/trc1_full_sfc/f015.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f015.png",
+          "cached": false
+        },
+        {
+          "frame": 16,
+          "url": "./cache/2026031311/trc1_full_sfc/f016.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f016.png",
+          "cached": false
+        },
+        {
+          "frame": 17,
+          "url": "./cache/2026031311/trc1_full_sfc/f017.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f017.png",
+          "cached": false
+        },
+        {
+          "frame": 18,
+          "url": "./cache/2026031311/trc1_full_sfc/f018.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_sfc_f018.png",
+          "cached": false
+        }
+      ],
+      "availableFrames": []
+    },
+    "trc1_full_int": {
+      "label": "Vertically integrated smoke",
+      "frames": [
+        {
+          "frame": 0,
+          "url": "./cache/2026031311/trc1_full_int/f000.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f000.png",
+          "cached": false
+        },
+        {
+          "frame": 1,
+          "url": "./cache/2026031311/trc1_full_int/f001.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f001.png",
+          "cached": false
+        },
+        {
+          "frame": 2,
+          "url": "./cache/2026031311/trc1_full_int/f002.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f002.png",
+          "cached": false
+        },
+        {
+          "frame": 3,
+          "url": "./cache/2026031311/trc1_full_int/f003.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f003.png",
+          "cached": false
+        },
+        {
+          "frame": 4,
+          "url": "./cache/2026031311/trc1_full_int/f004.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f004.png",
+          "cached": false
+        },
+        {
+          "frame": 5,
+          "url": "./cache/2026031311/trc1_full_int/f005.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f005.png",
+          "cached": false
+        },
+        {
+          "frame": 6,
+          "url": "./cache/2026031311/trc1_full_int/f006.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f006.png",
+          "cached": false
+        },
+        {
+          "frame": 7,
+          "url": "./cache/2026031311/trc1_full_int/f007.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f007.png",
+          "cached": false
+        },
+        {
+          "frame": 8,
+          "url": "./cache/2026031311/trc1_full_int/f008.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f008.png",
+          "cached": false
+        },
+        {
+          "frame": 9,
+          "url": "./cache/2026031311/trc1_full_int/f009.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f009.png",
+          "cached": false
+        },
+        {
+          "frame": 10,
+          "url": "./cache/2026031311/trc1_full_int/f010.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f010.png",
+          "cached": false
+        },
+        {
+          "frame": 11,
+          "url": "./cache/2026031311/trc1_full_int/f011.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f011.png",
+          "cached": false
+        },
+        {
+          "frame": 12,
+          "url": "./cache/2026031311/trc1_full_int/f012.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f012.png",
+          "cached": false
+        },
+        {
+          "frame": 13,
+          "url": "./cache/2026031311/trc1_full_int/f013.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f013.png",
+          "cached": false
+        },
+        {
+          "frame": 14,
+          "url": "./cache/2026031311/trc1_full_int/f014.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f014.png",
+          "cached": false
+        },
+        {
+          "frame": 15,
+          "url": "./cache/2026031311/trc1_full_int/f015.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f015.png",
+          "cached": false
+        },
+        {
+          "frame": 16,
+          "url": "./cache/2026031311/trc1_full_int/f016.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f016.png",
+          "cached": false
+        },
+        {
+          "frame": 17,
+          "url": "./cache/2026031311/trc1_full_int/f017.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f017.png",
+          "cached": false
+        },
+        {
+          "frame": 18,
+          "url": "./cache/2026031311/trc1_full_int/f018.png",
+          "remoteUrl": "https://rapidrefresh.noaa.gov/RRFS-SD/for_web/rrfs_ncep_smokedust_jet/2026031311/full/trc1_full_int_f018.png",
+          "cached": false
+        }
+      ],
+      "availableFrames": []
+    }
+  }
+}

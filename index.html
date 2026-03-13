@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RRFS Smoke Forecast Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside class="sidebar">
+        <h1>RRFS Smoke Forecast</h1>
+        <p class="lede">Cached RRFS Smoke/Dust overlays animated on a Leaflet map.</p>
+
+        <div class="controls">
+          <label>
+            Layer
+            <select id="layerSelect">
+              <option value="trc1_full_sfc">Near-surface smoke</option>
+              <option value="trc1_full_int">Vertically integrated smoke</option>
+            </select>
+          </label>
+
+          <label>
+            Forecast hour
+            <input id="frameSlider" type="range" min="0" max="18" value="0" step="1" />
+          </label>
+          <div class="frame-row">
+            <span id="frameLabel">F000</span>
+            <button id="playButton" type="button">Play</button>
+          </div>
+
+          <label>
+            Opacity
+            <input id="opacitySlider" type="range" min="0.1" max="1" value="0.72" step="0.01" />
+          </label>
+
+          <div class="button-row">
+            <button id="refreshButton" type="button">Reload manifest</button>
+            <a id="openNoaaLink" href="https://rapidrefresh.noaa.gov/RRFS-SD/" target="_blank" rel="noreferrer">Open source</a>
+          </div>
+        </div>
+
+        <div class="status" id="statusBox">Loading smoke manifest…</div>
+
+        <div class="notes">
+          <p><strong>Source:</strong> NOAA Rapid Refresh RRFS-SD graphics.</p>
+          <p><strong>Mode:</strong> smoke overlay PNGs are cached locally and served from GitHub Pages.</p>
+          <p id="runtimeMeta"></p>
+        </div>
+
+        <div class="diagnostics" id="diagnosticsBox">
+          <div><strong>Plumes:</strong> <span id="plumeCount">—</span></div>
+          <div><strong>Smoky area:</strong> <span id="smokyArea">—</span></div>
+          <div><strong>Opaque pixels:</strong> <span id="opaquePixels">—</span></div>
+        </div>
+
+        <details class="console-wrap" open>
+          <summary>Debug console</summary>
+          <div class="console-actions">
+            <button id="copyConsoleButton" type="button">Copy console</button>
+            <button id="clearConsoleButton" type="button">Clear</button>
+          </div>
+          <pre id="debugConsole" class="debug-console"></pre>
+        </details>
+      </aside>
+
+      <main class="main">
+        <div id="map"></div>
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

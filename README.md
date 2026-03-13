@@ -4,19 +4,21 @@ Leaflet-based viewer for RRFS smoke, deployed via GitHub Pages.
 
 ## Current architecture
 
-This version renders **raw RRFS GRIB fields** into transparent PNG overlays instead of scraping NOAA's image site or depending on Herbie runtime behavior.
+This version uses the same **RRFS byte-range pattern** as the working TreeSixty backend approach:
 
-Pipeline:
+1. list available RRFS cycles from anonymous S3 XML listings
+2. pick the latest cycle with the forecast hours we need
+3. fetch the `.idx` for each natlev GRIB
+4. locate the smoke message byte range in the index
+5. download only that message with an HTTP `Range` request
+6. decode it with `pygrib`
+7. reproject to a Web Mercator-aligned PNG overlay
+8. publish cached PNGs to GitHub Pages
 
-1. GitHub Actions probes documented RRFS AWS GRIB filenames directly
-2. downloads the first working RRFS deterministic control GRIB for each frame
-3. opens GRIB contents with `cfgrib`
-4. finds smoke fields for:
-   - near-surface smoke (`MASSDEN` at 8 m AGL for dry particulate organic matter <2.5 μm)
-   - vertically integrated smoke (`COLMD` for dry particulate organic matter <2.5 μm)
-5. reprojects them to EPSG:4326
-6. writes transparent PNG overlays into `public/cache-raw`
-7. deploys the app to GitHub Pages
+## Smoke fields targeted
+
+- `trc1_full_sfc` → `MASSDEN` at `8 m above ground`
+- `trc1_full_int` → `COLMD` for the whole atmospheric column
 
 ## Local development
 
@@ -29,6 +31,6 @@ npm run dev
 
 ## Notes
 
-- Source archive: NOAA RRFS prototype data on AWS
-- The script tries several known RRFS native-grid filename variants because NOAA naming has shifted over time.
-- If the GRIB field metadata changes, update the layer matchers in `scripts/render-rrfs-smoke.py`.
+- Source archive: NOAA RRFS prototype data on AWS S3
+- This avoids scraping NOAA graphics and avoids downloading full giant GRIB files when a single message is enough.
+- If NOAA changes natlev index metadata strings, update the `matchers` in `scripts/render-rrfs-smoke.py`.

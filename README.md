@@ -4,18 +4,19 @@ Leaflet-based viewer for RRFS smoke, deployed via GitHub Pages.
 
 ## Current architecture
 
-This version now aims to render **raw RRFS smoke fields** into transparent PNG overlays instead of scraping NOAA's pre-rendered website graphics.
+This version renders **raw RRFS GRIB fields** into transparent PNG overlays instead of scraping NOAA's image site or depending on Herbie runtime behavior.
 
 Pipeline:
 
-1. GitHub Actions opens recent RRFS prototype data from AWS using Herbie
-   - if RRFS has no index file for a run, the workflow downloads the full GRIB and reopens it locally
-2. reads smoke fields for:
-   - near-surface smoke (`MASSDEN` for dry particulate organic matter <2.5μm at 8 m AGL)
-   - vertically integrated smoke (`COLMD` for dry particulate organic matter <2.5μm)
-3. reprojects them to EPSG:4326
-4. writes transparent PNG overlays into `public/cache-raw`
-5. deploys the app to GitHub Pages
+1. GitHub Actions probes documented RRFS AWS GRIB filenames directly
+2. downloads the first working RRFS deterministic control GRIB for each frame
+3. opens GRIB contents with `cfgrib`
+4. finds smoke fields for:
+   - near-surface smoke (`MASSDEN` at 8 m AGL for dry particulate organic matter <2.5 μm)
+   - vertically integrated smoke (`COLMD` for dry particulate organic matter <2.5 μm)
+5. reprojects them to EPSG:4326
+6. writes transparent PNG overlays into `public/cache-raw`
+7. deploys the app to GitHub Pages
 
 ## Local development
 
@@ -29,6 +30,5 @@ npm run dev
 ## Notes
 
 - Source archive: NOAA RRFS prototype data on AWS
-- This avoids depending on the flaky RRFS-SD website image paths.
-- The repo still keeps the simple Leaflet overlay viewer from the original HRRR app.
-- If RRFS field metadata changes, update the search strings in `scripts/render-rrfs-smoke.py`.
+- The script tries several known RRFS native-grid filename variants because NOAA naming has shifted over time.
+- If the GRIB field metadata changes, update the layer matchers in `scripts/render-rrfs-smoke.py`.

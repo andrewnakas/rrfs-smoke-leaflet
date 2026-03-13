@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 import json
 import shutil
-import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import cfgrib
 import numpy as np
 import rasterio
+import requests
 from PIL import Image
 from pyproj import CRS
 from rasterio.transform import from_origin
@@ -19,20 +20,23 @@ OUT = PUBLIC / 'latest.json'
 CACHE = PUBLIC / 'cache-raw'
 DOWNLOADS = ROOT / '.rrfs-grib-cache'
 
+S3_BUCKET = 'https://noaa-rrfs-pds.s3.amazonaws.com'
+PREFIX_ROOT = 'rrfs_a'
 PROJ4 = '+proj=lcc +a=6371229 +b=6371229 +lat_1=25 +lat_2=25 +lat_0=25 +lon_0=265'
 MAX_SHORT_FRAME = 18
 MAX_LONG_FRAME = 48
-USER_AGENT = 'Claw/1.0 (+rrfs-smoke-leaflet)'
+
+SESSION = requests.Session()
+SESSION.headers.update({'User-Agent': 'Claw/1.0 (+rrfs-smoke-leaflet)'})
 
 LAYERS = {
     'trc1_full_sfc': {
         'label': 'Near-surface smoke',
         'units': 'kg/m^3',
         'scale_max': 250e-9,
+        'idx_tokens': [':MASSDEN:', ':8 m above ground:', 'Particulate organic matter dry'],
         'matcher': lambda da: (
-            str(da.attrs.get('GRIB_shortName', '')) == 'massden'
-            and str(da.attrs.get('GRIB_typeOfLevel', '')) in ('heightAboveGround', 'heightAboveGroundLayer')
-            and float(da.attrs.get('GRIB_level', -9999)) in (8.0, 8)
+            str(da.attrs.get('GRIB_shortName', '')).lower() == 'massden'
             and 'particulate organic matter dry' in json.dumps(da.attrs).lower()
         ),
     },
@@ -40,9 +44,9 @@ LAYERS = {
         'label': 'Vertically integrated smoke',
         'units': 'kg/m^2',
         'scale_max': 0.6,
+        'idx_tokens': [':COLMD:', 'Particulate organic matter dry'],
         'matcher': lambda da: (
-            str(da.attrs.get('GRIB_shortName', '')) == 'colmd'
-            and str(da.attrs.get('GRIB_typeOfLevel', '')) in ('atmosphereSingleLayer', 'entireAtmosphere', 'unknown')
+            str(da.attrs.get('GRIB_shortName', '')).lower() == 'colmd'
             and 'particulate organic matter dry' in json.dumps(da.attrs).lower()
         ),
     },
@@ -51,7 +55,7 @@ LAYERS = {
 
 def latest_cycle_utc(now=None):
     now = now or datetime.now(timezone.utc)
-    cycle_hour = (now.hour // 3) * 3
+    cycle_hour = (now.hour // 1) * 1
     return now.replace(hour=cycle_hour, minute=0, second=0, microsecond=0)
 
 
@@ -64,70 +68,94 @@ def cycle_candidates(long_only=False):
         yield cand
 
 
-def rrfs_url_candidates(run_dt, fxx):
-    ymd = run_dt.strftime('%Y%m%d')
+def list_bucket(prefix: str):
+    params = {'delimiter': '/', 'prefix': prefix}
+    r = SESSION.get(S3_BUCKET + '/', params=params, timeout=30)
+    r.raise_for_status()
+    return ET.fromstring(r.text)
+
+
+def list_cycle_files(day_ymd: str, hh: str):
+    root = list_bucket(f'{PREFIX_ROOT}/rrfs.{day_ymd}/{hh}/')
+    files = []
+    ns = '{http://s3.amazonaws.com/doc/2006-03-01/}'
+    for ct in root.findall(f'{ns}Contents'):
+        key_elem = ct.find(f'{ns}Key')
+        if key_elem is None or not key_elem.text:
+            continue
+        key = key_elem.text
+        if '/rrfs.t' not in key or not key.endswith('.grib2'):
+            continue
+        if '.subh.' in key:
+            continue
+        if '.natlev.' not in key and '.nat.' not in key:
+            continue
+        if '.na.grib2' not in key:
+            continue
+        files.append(key)
+    return sorted(files)
+
+
+def find_cycle_file(run_dt, fxx):
+    day_ymd = run_dt.strftime('%Y%m%d')
     hh = run_dt.strftime('%H')
-    ff = f'{fxx:03d}'
-    roots = [
-        f'https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.{ymd}/{hh}',
-        f'https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.{ymd}/{hh}/control',
-        f'https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_public/rrfs.{ymd}/{hh}',
-        f'https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_public/rrfs.{ymd}/{hh}/control',
-    ]
-    names = [
-        f'rrfs.t{hh}z.natlev.3km.f{ff}.na.grib2',
-        f'rrfs.t{hh}z.natlev.f{ff}.na.grib2',
-        f'rrfs.t{hh}z.natlev.f{ff}.grib2',
-        f'rrfs.t{hh}z.nat.f{ff}.na.grib2',
-        f'rrfs.t{hh}z.nat.f{ff}.grib2',
-        f'rrfs.t{hh}z.prslev.3km.f{ff}.na.grib2',
-        f'rrfs.t{hh}z.prslev.3km.f{ff}.conus.grib2',
-    ]
-    return [f'{root}/{name}' for root in roots for name in names]
+    ff = f'.f{fxx:03d}.'
+    files = list_cycle_files(day_ymd, hh)
+    preferred = [k for k in files if ff in k and '.natlev.' in k]
+    if preferred:
+        return preferred[0]
+    fallback = [k for k in files if ff in k]
+    if fallback:
+        return fallback[0]
+    raise RuntimeError(f'no RRFS nat/natlev file found for {day_ymd} {hh}z F{fxx:03d}')
 
 
-def download_file(url, dest):
-    req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-    with urllib.request.urlopen(req, timeout=90) as r:
-        if r.status != 200:
-            raise RuntimeError(f'HTTP {r.status}')
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        with open(dest, 'wb') as f:
-            shutil.copyfileobj(r, f)
+def parse_idx_range(idx_text: str, tokens):
+    lines = [ln for ln in idx_text.strip().splitlines() if ln.strip()]
+    selected = None
+    for i, line in enumerate(lines):
+        if all(token in line for token in tokens):
+            parts = line.split(':')
+            if len(parts) < 3:
+                continue
+            start = int(parts[1])
+            end = int(lines[i + 1].split(':')[1]) - 1 if i + 1 < len(lines) else None
+            selected = (start, end, line)
+            break
+    return selected
 
 
-def fetch_rrfs_grib(run_dt, fxx):
+def download_field_subset(run_dt, fxx, layer_key):
+    key = find_cycle_file(run_dt, fxx)
+    grib_url = f'{S3_BUCKET}/{key}'
+    idx_url = grib_url + '.idx'
+    idx_res = SESSION.get(idx_url, timeout=30)
+    idx_res.raise_for_status()
+    parsed = parse_idx_range(idx_res.text, LAYERS[layer_key]['idx_tokens'])
+    if not parsed:
+        raise RuntimeError(f'field not found in idx for {Path(key).name}')
+    start, end, matched_line = parsed
+
     ymdh = run_dt.strftime('%Y%m%d%H')
-    cache_dir = DOWNLOADS / ymdh
-    cache_dir.mkdir(parents=True, exist_ok=True)
-    errors = []
+    out_dir = DOWNLOADS / ymdh / layer_key
+    out_dir.mkdir(parents=True, exist_ok=True)
+    local = out_dir / f'f{fxx:03d}.grib2'
+    if local.exists() and local.stat().st_size > 1024:
+        return local, grib_url, matched_line
 
-    for url in rrfs_url_candidates(run_dt, fxx):
-        filename = url.rsplit('/', 1)[-1]
-        local = cache_dir / filename
-        if local.exists() and local.stat().st_size > 1024 * 1024:
-            return local, url
-        try:
-            download_file(url, local)
-            if local.stat().st_size > 1024 * 1024:
-                return local, url
-            errors.append(f'{filename}: too small')
-        except Exception as e:
-            errors.append(f'{filename}: {e}')
-            if local.exists():
-                local.unlink(missing_ok=True)
-
-    raise RuntimeError(' ; '.join(errors) or 'no RRFS grib URL succeeded')
+    headers = {'Range': f'bytes={start}-{end}' if end is not None else f'bytes={start}-'}
+    with SESSION.get(grib_url, headers=headers, timeout=180, stream=True) as r:
+        r.raise_for_status()
+        with open(local, 'wb') as f:
+            for chunk in r.iter_content(chunk_size=1024 * 1024):
+                if chunk:
+                    f.write(chunk)
+    return local, grib_url, matched_line
 
 
-def open_all_datasets(grib_path):
-    return cfgrib.open_datasets(
-        str(grib_path),
-        backend_kwargs={
-            'indexpath': '',
-            'errors': 'ignore',
-        },
-    )
+def open_subset_dataset(grib_path):
+    datasets = cfgrib.open_datasets(str(grib_path), backend_kwargs={'indexpath': '', 'errors': 'ignore'})
+    return datasets
 
 
 def find_matching_var(datasets, matcher):
@@ -140,21 +168,18 @@ def find_matching_var(datasets, matcher):
                 'typeOfLevel': da.attrs.get('GRIB_typeOfLevel'),
                 'level': da.attrs.get('GRIB_level'),
                 'name_full': da.attrs.get('GRIB_name'),
-                'parameterName': da.attrs.get('GRIB_parameterName'),
             }
             attempts.append(meta)
             if matcher(da):
                 return da.squeeze(), attempts
-    raise RuntimeError(f'no matching RRFS field found; scanned={attempts[:20]}')
+    raise RuntimeError(f'no matching variable found; scanned={attempts[:20]}')
 
 
 def extract_xy(var):
     x_name = next((n for n in var.coords if n.lower() in ('x', 'projection_x_coordinate')), None)
     y_name = next((n for n in var.coords if n.lower() in ('y', 'projection_y_coordinate')), None)
     if x_name is not None and y_name is not None:
-        x = np.asarray(var.coords[x_name].values, dtype='float64')
-        y = np.asarray(var.coords[y_name].values, dtype='float64')
-        return x, y
+        return np.asarray(var.coords[x_name].values, dtype='float64'), np.asarray(var.coords[y_name].values, dtype='float64')
 
     lon_name = next((n for n in var.coords if n.lower() == 'longitude'), None)
     lat_name = next((n for n in var.coords if n.lower() == 'latitude'), None)
@@ -162,9 +187,7 @@ def extract_xy(var):
         lon = np.asarray(var.coords[lon_name].values, dtype='float64')
         lat = np.asarray(var.coords[lat_name].values, dtype='float64')
         if lon.ndim == 2 and lat.ndim == 2:
-            x = lon[0, :]
-            y = lat[:, 0]
-            return x, y
+            return lon[0, :], lat[:, 0]
 
     raise RuntimeError(f'could not find x/y coords; coords={list(var.coords)}')
 
@@ -200,22 +223,10 @@ def smoke_rgba(data, scale_max):
 def warp_rgba(rgba, src_transform, src_crs, src_bounds):
     height, width = rgba.shape[:2]
     left, bottom, right, top = src_bounds
-    dst_transform, dst_width, dst_height = calculate_default_transform(
-        src_crs, 'EPSG:4326', width, height, left, bottom, right, top, resolution=0.05
-    )
+    dst_transform, dst_width, dst_height = calculate_default_transform(src_crs, 'EPSG:4326', width, height, left, bottom, right, top, resolution=0.05)
     dst = np.zeros((4, dst_height, dst_width), dtype='uint8')
     for band in range(4):
-        reproject(
-            source=rgba[:, :, band],
-            destination=dst[band],
-            src_transform=src_transform,
-            src_crs=src_crs,
-            dst_transform=dst_transform,
-            dst_crs='EPSG:4326',
-            resampling=Resampling.bilinear,
-            src_nodata=0,
-            dst_nodata=0,
-        )
+        reproject(source=rgba[:, :, band], destination=dst[band], src_transform=src_transform, src_crs=src_crs, dst_transform=dst_transform, dst_crs='EPSG:4326', resampling=Resampling.bilinear, src_nodata=0, dst_nodata=0)
     bounds = rasterio.transform.array_bounds(dst_height, dst_width, dst_transform)
     leaflet_bounds = [[bounds[1], bounds[0]], [bounds[3], bounds[2]]]
     return np.moveaxis(dst, 0, -1), leaflet_bounds
@@ -226,30 +237,21 @@ def save_png(rgba, path):
     Image.fromarray(rgba, mode='RGBA').save(path)
 
 
-def load_layer_data(run_dt, frame, layer):
-    grib_path, url = fetch_rrfs_grib(run_dt, frame)
-    datasets = open_all_datasets(grib_path)
-    var, scanned = find_matching_var(datasets, layer['matcher'])
-    return grib_path, url, var, scanned
+def load_layer_data(run_dt, frame, layer_key):
+    grib_path, url, matched_line = download_field_subset(run_dt, frame, layer_key)
+    datasets = open_subset_dataset(grib_path)
+    var, scanned = find_matching_var(datasets, LAYERS[layer_key]['matcher'])
+    return grib_path, url, matched_line, var, scanned
 
 
 def render_mode(runtime_dt, mode_name, frame_limit):
     runtime = runtime_dt.strftime('%Y%m%d%H')
-    manifest = {
-        'runtime': runtime,
-        'maxFrame': 0,
-        'bounds': None,
-        'logs': [f'using runtime {runtime} from direct AWS RRFS GRIB ({mode_name})'],
-        'layers': {},
-    }
-
+    manifest = {'runtime': runtime, 'maxFrame': 0, 'bounds': None, 'logs': [f'using runtime {runtime} from RRFS byte-range GRIB extraction ({mode_name})'], 'layers': {}}
     for key, layer in LAYERS.items():
-        layer_frames = []
-        available = []
-        layer_bounds = None
+        layer_frames, available, layer_bounds = [], [], None
         for frame in range(frame_limit + 1):
             try:
-                grib_path, url, var, scanned = load_layer_data(runtime_dt, frame, layer)
+                grib_path, url, matched_line, var, _ = load_layer_data(runtime_dt, frame, key)
                 if var.ndim != 2:
                     raise RuntimeError(f'unexpected dims: {var.dims}')
                 src_crs, src_transform, src_bounds = build_source_transform(var)
@@ -257,18 +259,13 @@ def render_mode(runtime_dt, mode_name, frame_limit):
                 warped, layer_bounds = warp_rgba(rgba, src_transform, src_crs, src_bounds)
                 rel = f'./cache-raw/{runtime}/{mode_name}/{key}/f{frame:03d}.png'
                 save_png(warped, PUBLIC / rel.replace('./', ''))
-                layer_frames.append({'frame': frame, 'url': rel, 'cached': True, 'source': url})
+                layer_frames.append({'frame': frame, 'url': rel, 'cached': True, 'source': url, 'idxMatch': matched_line})
                 available.append(frame)
                 manifest['logs'].append(f'cached {key} F{frame:03d} from {grib_path.name}')
             except Exception as e:
                 layer_frames.append({'frame': frame, 'url': None, 'cached': False, 'error': str(e)})
                 manifest['logs'].append(f'failed {key} F{frame:03d}: {e}')
-        manifest['layers'][key] = {
-            'label': layer['label'],
-            'units': layer['units'],
-            'frames': layer_frames,
-            'availableFrames': available,
-        }
+        manifest['layers'][key] = {'label': layer['label'], 'units': layer['units'], 'frames': layer_frames, 'availableFrames': available}
         if available:
             manifest['maxFrame'] = max(manifest['maxFrame'], available[-1])
         if layer_bounds is not None and manifest['bounds'] is None:
@@ -277,17 +274,15 @@ def render_mode(runtime_dt, mode_name, frame_limit):
 
 
 def runtime_has_smoke(run_dt):
-    grib_path, url = fetch_rrfs_grib(run_dt, 0)
-    datasets = open_all_datasets(grib_path)
-    var, scanned = find_matching_var(datasets, LAYERS['trc1_full_sfc']['matcher'])
-    return grib_path, url, var, scanned
+    grib_path, url, matched_line, var, _ = load_layer_data(run_dt, 0, 'trc1_full_sfc')
+    return grib_path, url, matched_line, var
 
 
 def find_runtime(long_only=False):
     logs = []
     for run_dt in cycle_candidates(long_only=long_only):
         try:
-            grib_path, url, var, scanned = runtime_has_smoke(run_dt)
+            grib_path, url, matched_line, var = runtime_has_smoke(run_dt)
             logs.append(f'validated runtime {run_dt.strftime("%Y%m%d%H")} with {grib_path.name}')
             return run_dt, logs
         except Exception as e:
@@ -302,13 +297,7 @@ def main():
 
     short_run, short_logs = find_runtime(long_only=False)
     short_runtime = short_run.strftime('%Y%m%d%H')
-
-    manifest = {
-        'generatedAt': datetime.now(timezone.utc).isoformat(),
-        'runtime': short_runtime,
-        'runtimeSource': 'aws-noaa-rrfs-direct-grib',
-        'modes': {},
-    }
+    manifest = {'generatedAt': datetime.now(timezone.utc).isoformat(), 'runtime': short_runtime, 'runtimeSource': 'aws-noaa-rrfs-byte-range', 'modes': {}}
 
     hourly = render_mode(short_run, 'hourly', MAX_SHORT_FRAME)
     hourly['logs'] = short_logs + hourly['logs']

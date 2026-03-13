@@ -31,7 +31,7 @@ LAYERS = {
     'trc1_full_int': {
         'label': 'Vertically integrated smoke',
         'units': 'kg/m^2',
-        'search': ':COLMD:entire atmosphere \(considered as a single layer\):.*aerosol=Particulate organic matter dry.*<2.5e-06',
+        'search': r':COLMD:entire atmosphere \(considered as a single layer\):.*aerosol=Particulate organic matter dry.*<2.5e-06',
         'scale_max': 0.6,
     },
 }
@@ -60,6 +60,8 @@ def herbie_open(run_dt, fxx, search):
         model='rrfs',
         product='nat',
         fxx=fxx,
+        member='control',
+        domain=None,
         priority=['aws'],
         save_dir=ROOT / '.herbie-cache',
         verbose=False,

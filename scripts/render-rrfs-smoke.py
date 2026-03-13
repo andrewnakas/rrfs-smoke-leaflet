@@ -68,15 +68,22 @@ def rrfs_url_candidates(run_dt, fxx):
     ymd = run_dt.strftime('%Y%m%d')
     hh = run_dt.strftime('%H')
     ff = f'{fxx:03d}'
-    base = f'https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs_a.{ymd}/{hh}/control'
+    roots = [
+        f'https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.{ymd}/{hh}',
+        f'https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.{ymd}/{hh}/control',
+        f'https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_public/rrfs.{ymd}/{hh}',
+        f'https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_public/rrfs.{ymd}/{hh}/control',
+    ]
     names = [
-        f'rrfs.t{hh}z.natlev.f{ff}.grib2',
         f'rrfs.t{hh}z.natlev.3km.f{ff}.na.grib2',
         f'rrfs.t{hh}z.natlev.f{ff}.na.grib2',
-        f'rrfs.t{hh}z.nat.f{ff}.grib2',
+        f'rrfs.t{hh}z.natlev.f{ff}.grib2',
         f'rrfs.t{hh}z.nat.f{ff}.na.grib2',
+        f'rrfs.t{hh}z.nat.f{ff}.grib2',
+        f'rrfs.t{hh}z.prslev.3km.f{ff}.na.grib2',
+        f'rrfs.t{hh}z.prslev.3km.f{ff}.conus.grib2',
     ]
-    return [f'{base}/{name}' for name in names]
+    return [f'{root}/{name}' for root in roots for name in names]
 
 
 def download_file(url, dest):

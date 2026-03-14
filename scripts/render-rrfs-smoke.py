@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import os
+import re
 import shutil
 import tempfile
 import xml.etree.ElementTree as ET
@@ -30,20 +31,11 @@ LAYERS = {
         'label': 'Near-surface smoke',
         'units': 'kg/m^3',
         'scale_max': 250e-9,
-        'matchers': [
-            ['MASSDEN', '8 m above ground', 'Particulate organic matter dry'],
-            ['MASSDEN', '8 m above ground'],
-        ],
     },
     'trc1_full_int': {
         'label': 'Vertically integrated smoke',
-        'units': 'kg/m^2',
-        'scale_max': 0.6,
-        'matchers': [
-            ['COLMD', 'Particulate organic matter dry'],
-            ['COLMD', 'entire atmosphere'],
-            ['COLMD'],
-        ],
+        'units': 'kg/m^2 (proxy)',
+        'scale_max': 5e-6,
     },
 }
 
@@ -107,45 +99,60 @@ def build_rrfs_key(cycle_date: str, cycle_hour: str, forecast_hour: int) -> str:
     return f'rrfs_a/rrfs.{cycle_date}/{cycle_hour}/rrfs.t{cycle_hour}z.natlev.3km.f{forecast_hour:03d}.na.grib2'
 
 
-def parse_idx_for_message(idx_url: str, matchers: list[list[str]]):
+def parse_idx_entries(idx_url: str):
     resp = requests.get(idx_url, timeout=REQUEST_TIMEOUT)
     if resp.status_code != 200:
         raise RuntimeError(f'idx fetch failed: {idx_url} ({resp.status_code})')
 
-    starts = []
-    metas = []
+    rows = []
     for line in resp.text.strip().splitlines():
         parts = line.split(':')
         if len(parts) < 4:
             continue
         try:
-            starts.append(int(parts[1]))
-            metas.append(':'.join(parts[3:]))
+            rows.append({'start': int(parts[1]), 'meta': ':'.join(parts[3:]), 'line': line})
         except Exception:
             continue
 
-    for wanted in matchers:
-        wanted_lower = [w.lower() for w in wanted]
-        for i, meta in enumerate(metas):
-            meta_lower = meta.lower()
-            if all(w in meta_lower for w in wanted_lower):
-                start = starts[i]
-                end = starts[i + 1] - 1 if i + 1 < len(starts) else None
-                return start, end, meta
-
-    raise RuntimeError(f'message not found in idx for matchers={matchers}')
+    for i in range(len(rows) - 1):
+        rows[i]['end'] = rows[i + 1]['start'] - 1
+    if rows:
+        rows[-1]['end'] = None
+    return rows
 
 
-def download_message_only(key: str, matchers: list[list[str]], dest: str):
-    grib_url = f'{RRFS_S3_BUCKET}/{key}'
-    idx_url = f'{grib_url}.idx'
-    start, end, meta = parse_idx_for_message(idx_url, matchers)
-    headers = {'Range': f'bytes={start}-{"" if end is None else end}'}
+def select_smoke_entries(rows, layer_key):
+    pom = [r for r in rows if 'massden' in r['meta'].lower() and 'particulate organic matter dry' in r['meta'].lower()]
+    if layer_key == 'trc1_full_sfc':
+        hybrid = []
+        for r in pom:
+            m = re.search(r'MASSDEN:(\d+) hybrid level', r['meta'], re.I)
+            if m:
+                hybrid.append((int(m.group(1)), r))
+        if not hybrid:
+            raise RuntimeError('no particulate organic matter dry MASSDEN hybrid levels found')
+        hybrid.sort(key=lambda x: x[0])
+        return [hybrid[0][1]]
+
+    if layer_key == 'trc1_full_int':
+        hybrid = []
+        for r in pom:
+            m = re.search(r'MASSDEN:(\d+) hybrid level', r['meta'], re.I)
+            if m:
+                hybrid.append((int(m.group(1)), r))
+        if not hybrid:
+            raise RuntimeError('no particulate organic matter dry MASSDEN hybrid levels found for integration')
+        hybrid.sort(key=lambda x: x[0])
+        return [r for _, r in hybrid]
+
+    raise RuntimeError(f'unknown layer {layer_key}')
+
+
+def download_entry_bytes(grib_url: str, entry: dict) -> bytes:
+    headers = {'Range': f'bytes={entry["start"]}-{"" if entry["end"] is None else entry["end"]}'}
     resp = requests.get(grib_url, headers=headers, timeout=DOWNLOAD_TIMEOUT)
     resp.raise_for_status()
-    with open(dest, 'wb') as f:
-        f.write(resp.content)
-    return grib_url, meta
+    return resp.content
 
 
 def build_rrfs_webmercator_grid(lats, lons, resolution_m=8000, sample_stride=25):
@@ -239,20 +246,47 @@ def generate_png_from_grib(values, lats, lons, scale_max, output_path):
 
 def fetch_layer_slice(cycle_date: str, cycle_hour: str, forecast_hour: int, layer_key: str):
     key = build_rrfs_key(cycle_date, cycle_hour, forecast_hour)
-    with tempfile.NamedTemporaryFile(delete=False, suffix='.grib2') as tmp:
-        tmp_path = tmp.name
-    try:
-        grib_url, meta = download_message_only(key, LAYERS[layer_key]['matchers'], tmp_path)
-        grbs = pygrib.open(tmp_path)
-        grb = grbs[1]
-        values = grb.values
-        lats, lons = grb.latlons()
-        grbs.close()
-        lons = np.where(lons > 180, lons - 360, lons)
-        return values, lats, lons, grib_url, meta
-    finally:
-        if os.path.exists(tmp_path):
+    grib_url = f'{RRFS_S3_BUCKET}/{key}'
+    rows = parse_idx_entries(f'{grib_url}.idx')
+    entries = select_smoke_entries(rows, layer_key)
+
+    if layer_key == 'trc1_full_sfc':
+        entry = entries[0]
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.grib2') as tmp:
+            tmp.write(download_entry_bytes(grib_url, entry))
+            tmp_path = tmp.name
+        try:
+            grbs = pygrib.open(tmp_path)
+            grb = grbs[1]
+            values = grb.values
+            lats, lons = grb.latlons()
+            grbs.close()
+            lons = np.where(lons > 180, lons - 360, lons)
+            return values, lats, lons, grib_url, [entry['meta']]
+        finally:
             os.unlink(tmp_path)
+
+    arrays = []
+    lats = lons = None
+    metas = []
+    for entry in entries:
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.grib2') as tmp:
+            tmp.write(download_entry_bytes(grib_url, entry))
+            tmp_path = tmp.name
+        try:
+            grbs = pygrib.open(tmp_path)
+            grb = grbs[1]
+            arr = grb.values.astype(np.float64)
+            if lats is None:
+                lats, lons = grb.latlons()
+                lons = np.where(lons > 180, lons - 360, lons)
+            arrays.append(arr)
+            metas.append(entry['meta'])
+            grbs.close()
+        finally:
+            os.unlink(tmp_path)
+    values = np.nansum(np.stack(arrays, axis=0), axis=0)
+    return values, lats, lons, grib_url, metas
 
 
 def render_mode(cycle_date: str, cycle_hour: str, mode_name: str, frame_limit: int):
@@ -270,11 +304,11 @@ def render_mode(cycle_date: str, cycle_hour: str, mode_name: str, frame_limit: i
         available = []
         for frame in range(frame_limit + 1):
             try:
-                log(f'[{runtime}] {layer_key} F{frame:03d}: downloading byte-range slice')
-                values, lats, lons, grib_url, meta = fetch_layer_slice(cycle_date, cycle_hour, frame, layer_key)
+                log(f'[{runtime}] {layer_key} F{frame:03d}: fetching smoke slices')
+                values, lats, lons, grib_url, metas = fetch_layer_slice(cycle_date, cycle_hour, frame, layer_key)
                 rel = f'./cache-raw/{runtime}/{mode_name}/{layer_key}/f{frame:03d}.png'
                 bounds = generate_png_from_grib(values, lats, lons, layer['scale_max'], PUBLIC / rel.replace('./', ''))
-                frames.append({'frame': frame, 'url': rel, 'cached': True, 'source': grib_url, 'meta': meta})
+                frames.append({'frame': frame, 'url': rel, 'cached': True, 'source': grib_url, 'meta': metas[:3]})
                 available.append(frame)
                 if manifest['bounds'] is None:
                     manifest['bounds'] = [[bounds['south'], bounds['west']], [bounds['north'], bounds['east']]]

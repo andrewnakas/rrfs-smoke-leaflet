@@ -330,15 +330,15 @@ def render_mode(cycle_date: str, cycle_hour: str, mode_name: str, frame_limit: i
 def find_runtime(long_only=False, min_hours=1):
     cycle_date, cycle_hour = discover_latest_rrfs_cycle(min_hours=min_hours, long_only=long_only)
     if not cycle_date:
-        raise RuntimeError('no RRFS cycle discovered from S3 listing')
-    return cycle_date, cycle_hour, [f'discovered runtime {cycle_date}{cycle_hour} from RRFS S3 listing']
+        raise RuntimeError(f'no RRFS cycle discovered from S3 listing with min_hours={min_hours}')
+    return cycle_date, cycle_hour, [f'discovered runtime {cycle_date}{cycle_hour} from RRFS S3 listing (min_hours={min_hours})']
 
 
 def main():
     PUBLIC.mkdir(parents=True, exist_ok=True)
     CACHE.mkdir(parents=True, exist_ok=True)
 
-    cycle_date, cycle_hour, short_logs = find_runtime(long_only=False, min_hours=1)
+    cycle_date, cycle_hour, short_logs = find_runtime(long_only=False, min_hours=MAX_SHORT_FRAME + 1)
     runtime = f'{cycle_date}{cycle_hour}'
     manifest = {
         'generatedAt': datetime.now(timezone.utc).isoformat(),

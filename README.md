@@ -7,7 +7,7 @@ Leaflet-based viewer for RRFS smoke, deployed via GitHub Pages.
 This version uses the same **RRFS byte-range pattern** as the working TreeSixty backend approach:
 
 1. list available RRFS cycles from anonymous S3 XML listings
-2. pick the latest cycle with the forecast hours we need
+2. pick the latest cycle only if it already has the forecast depth we need
 3. fetch the `.idx` for each natlev GRIB
 4. locate the smoke message byte range in the index
 5. download only that message with an HTTP `Range` request

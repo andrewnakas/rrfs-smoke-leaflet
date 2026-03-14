@@ -1,53 +1,62 @@
 {
-  "generatedAt": "2026-03-13T22:56:19.203503+00:00",
-  "runtime": "2026031321",
+  "generatedAt": "2026-03-14T22:41:18.473896+00:00",
+  "runtime": "2026031420",
   "runtimeSource": "aws-noaa-rrfs-direct-byte-range",
   "modes": {
     "hourly": {
-      "runtime": "2026031321",
-      "maxFrame": 0,
-      "bounds": null,
+      "runtime": "2026031420",
+      "maxFrame": 18,
+      "bounds": [
+        [
+          -1.605785,
+          -179.99993599999996
+        ],
+        [
+          85.05112878,
+          179.999968
+        ]
+      ],
       "logs": [
-        "discovered runtime 2026031321 from RRFS S3 listing",
-        "using runtime 2026031321 via RRFS S3 idx byte ranges (hourly)",
-        "failed trc1_full_sfc F000: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F001: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F002: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F003: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F004: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F005: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F006: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F007: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F008: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F009: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F010: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F011: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F012: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F013: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F014: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F015: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F016: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F017: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F018: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_int F000: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F001: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F002: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F003: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F004: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F005: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F006: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F007: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F008: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F009: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F010: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F011: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F012: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F013: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F014: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F015: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F016: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F017: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F018: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        "discovered runtime 2026031420 from RRFS S3 listing (min_hours=19)",
+        "using runtime 2026031420 via RRFS S3 idx byte ranges (hourly)",
+        "cached trc1_full_sfc F000",
+        "cached trc1_full_sfc F001",
+        "cached trc1_full_sfc F002",
+        "cached trc1_full_sfc F003",
+        "cached trc1_full_sfc F004",
+        "cached trc1_full_sfc F005",
+        "cached trc1_full_sfc F006",
+        "cached trc1_full_sfc F007",
+        "cached trc1_full_sfc F008",
+        "cached trc1_full_sfc F009",
+        "cached trc1_full_sfc F010",
+        "cached trc1_full_sfc F011",
+        "cached trc1_full_sfc F012",
+        "cached trc1_full_sfc F013",
+        "cached trc1_full_sfc F014",
+        "cached trc1_full_sfc F015",
+        "cached trc1_full_sfc F016",
+        "cached trc1_full_sfc F017",
+        "cached trc1_full_sfc F018",
+        "cached trc1_full_int F000",
+        "cached trc1_full_int F001",
+        "cached trc1_full_int F002",
+        "cached trc1_full_int F003",
+        "cached trc1_full_int F004",
+        "cached trc1_full_int F005",
+        "cached trc1_full_int F006",
+        "cached trc1_full_int F007",
+        "cached trc1_full_int F008",
+        "cached trc1_full_int F009",
+        "cached trc1_full_int F010",
+        "cached trc1_full_int F011",
+        "cached trc1_full_int F012",
+        "cached trc1_full_int F013",
+        "cached trc1_full_int F014",
+        "cached trc1_full_int F015",
+        "cached trc1_full_int F016",
+        "cached trc1_full_int F017",
+        "cached trc1_full_int F018"
       ],
       "layers": {
         "trc1_full_sfc": {
@@ -56,349 +65,550 @@
           "frames": [
             {
               "frame": 0,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f000.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f000.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 1,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f001.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f001.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 2,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f002.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f002.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 3,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f003.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f003.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 4,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f004.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f004.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 5,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f005.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f005.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 6,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f006.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f006.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 7,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f007.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f007.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 8,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f008.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f008.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 9,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f009.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f009.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 10,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f010.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f010.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 11,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f011.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f011.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 12,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f012.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f012.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 13,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f013.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f013.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 14,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f014.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f014.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 15,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f015.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f015.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 16,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f016.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f016.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 17,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f017.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f017.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 18,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f018.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f018.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             }
           ],
-          "availableFrames": []
+          "availableFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
         },
         "trc1_full_int": {
           "label": "Vertically integrated smoke",
-          "units": "kg/m^2",
+          "units": "kg/m^2 (proxy)",
           "frames": [
             {
               "frame": 0,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f000.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f000.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 1,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f001.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f001.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 2,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f002.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f002.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 3,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f003.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f003.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 4,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f004.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f004.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 5,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f005.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f005.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 6,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f006.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f006.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 7,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f007.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f007.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 8,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f008.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f008.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 9,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f009.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f009.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 10,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f010.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f010.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 11,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f011.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f011.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 12,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f012.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f012.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 13,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f013.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f013.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 14,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f014.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f014.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 15,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f015.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f015.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 16,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f016.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f016.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 17,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f017.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f017.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 18,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031420/hourly/trc1_full_int/f018.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f018.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             }
           ],
-          "availableFrames": []
+          "availableFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
         }
       }
     },
     "long": {
-      "runtime": "2026031318",
-      "maxFrame": 0,
-      "bounds": null,
+      "runtime": "2026031418",
+      "maxFrame": 48,
+      "bounds": [
+        [
+          -1.605785,
+          -179.99993599999996
+        ],
+        [
+          85.05112878,
+          179.999968
+        ]
+      ],
       "logs": [
-        "discovered runtime 2026031318 from RRFS S3 listing",
-        "using runtime 2026031318 via RRFS S3 idx byte ranges (long)",
-        "failed trc1_full_sfc F000: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F001: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F002: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F003: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F004: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F005: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F006: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F007: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F008: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F009: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F010: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F011: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F012: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F013: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F014: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F015: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F016: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F017: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F018: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F019: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F020: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F021: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F022: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F023: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F024: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F025: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F026: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F027: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F028: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F029: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F030: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F031: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F032: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F033: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F034: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F035: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F036: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F037: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F038: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F039: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F040: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F041: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F042: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F043: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F044: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F045: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F046: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F047: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_sfc F048: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-        "failed trc1_full_int F000: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F001: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F002: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F003: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F004: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F005: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F006: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F007: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F008: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F009: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F010: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F011: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F012: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F013: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F014: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F015: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F016: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F017: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F018: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F019: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F020: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F021: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F022: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F023: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F024: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F025: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F026: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F027: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F028: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F029: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F030: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F031: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F032: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F033: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F034: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F035: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F036: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F037: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F038: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F039: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F040: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F041: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F042: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F043: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F044: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F045: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F046: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F047: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-        "failed trc1_full_int F048: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+        "discovered runtime 2026031418 from RRFS S3 listing (min_hours=49)",
+        "using runtime 2026031418 via RRFS S3 idx byte ranges (long)",
+        "cached trc1_full_sfc F000",
+        "cached trc1_full_sfc F001",
+        "cached trc1_full_sfc F002",
+        "cached trc1_full_sfc F003",
+        "cached trc1_full_sfc F004",
+        "cached trc1_full_sfc F005",
+        "cached trc1_full_sfc F006",
+        "cached trc1_full_sfc F007",
+        "cached trc1_full_sfc F008",
+        "cached trc1_full_sfc F009",
+        "cached trc1_full_sfc F010",
+        "cached trc1_full_sfc F011",
+        "cached trc1_full_sfc F012",
+        "cached trc1_full_sfc F013",
+        "cached trc1_full_sfc F014",
+        "cached trc1_full_sfc F015",
+        "cached trc1_full_sfc F016",
+        "cached trc1_full_sfc F017",
+        "cached trc1_full_sfc F018",
+        "cached trc1_full_sfc F019",
+        "cached trc1_full_sfc F020",
+        "cached trc1_full_sfc F021",
+        "cached trc1_full_sfc F022",
+        "cached trc1_full_sfc F023",
+        "cached trc1_full_sfc F024",
+        "cached trc1_full_sfc F025",
+        "cached trc1_full_sfc F026",
+        "cached trc1_full_sfc F027",
+        "cached trc1_full_sfc F028",
+        "cached trc1_full_sfc F029",
+        "cached trc1_full_sfc F030",
+        "cached trc1_full_sfc F031",
+        "cached trc1_full_sfc F032",
+        "cached trc1_full_sfc F033",
+        "cached trc1_full_sfc F034",
+        "cached trc1_full_sfc F035",
+        "cached trc1_full_sfc F036",
+        "cached trc1_full_sfc F037",
+        "cached trc1_full_sfc F038",
+        "cached trc1_full_sfc F039",
+        "cached trc1_full_sfc F040",
+        "cached trc1_full_sfc F041",
+        "cached trc1_full_sfc F042",
+        "cached trc1_full_sfc F043",
+        "cached trc1_full_sfc F044",
+        "cached trc1_full_sfc F045",
+        "cached trc1_full_sfc F046",
+        "cached trc1_full_sfc F047",
+        "cached trc1_full_sfc F048",
+        "cached trc1_full_int F000",
+        "cached trc1_full_int F001",
+        "cached trc1_full_int F002",
+        "cached trc1_full_int F003",
+        "cached trc1_full_int F004",
+        "cached trc1_full_int F005",
+        "cached trc1_full_int F006",
+        "cached trc1_full_int F007",
+        "cached trc1_full_int F008",
+        "cached trc1_full_int F009",
+        "cached trc1_full_int F010",
+        "cached trc1_full_int F011",
+        "cached trc1_full_int F012",
+        "cached trc1_full_int F013",
+        "cached trc1_full_int F014",
+        "cached trc1_full_int F015",
+        "cached trc1_full_int F016",
+        "cached trc1_full_int F017",
+        "cached trc1_full_int F018",
+        "cached trc1_full_int F019",
+        "cached trc1_full_int F020",
+        "cached trc1_full_int F021",
+        "cached trc1_full_int F022",
+        "cached trc1_full_int F023",
+        "cached trc1_full_int F024",
+        "cached trc1_full_int F025",
+        "cached trc1_full_int F026",
+        "cached trc1_full_int F027",
+        "cached trc1_full_int F028",
+        "cached trc1_full_int F029",
+        "cached trc1_full_int F030",
+        "cached trc1_full_int F031",
+        "cached trc1_full_int F032",
+        "cached trc1_full_int F033",
+        "cached trc1_full_int F034",
+        "cached trc1_full_int F035",
+        "cached trc1_full_int F036",
+        "cached trc1_full_int F037",
+        "cached trc1_full_int F038",
+        "cached trc1_full_int F039",
+        "cached trc1_full_int F040",
+        "cached trc1_full_int F041",
+        "cached trc1_full_int F042",
+        "cached trc1_full_int F043",
+        "cached trc1_full_int F044",
+        "cached trc1_full_int F045",
+        "cached trc1_full_int F046",
+        "cached trc1_full_int F047",
+        "cached trc1_full_int F048"
       ],
       "layers": {
         "trc1_full_sfc": {
@@ -407,607 +617,1108 @@
           "frames": [
             {
               "frame": 0,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f000.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f000.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 1,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f001.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f001.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 2,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f002.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f002.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 3,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f003.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f003.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 4,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f004.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f004.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 5,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f005.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f005.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 6,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f006.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f006.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 7,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f007.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f007.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 8,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f008.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f008.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 9,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f009.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f009.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 10,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f010.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f010.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 11,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f011.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f011.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 12,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f012.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f012.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 13,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f013.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f013.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 14,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f014.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f014.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 15,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f015.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f015.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 16,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f016.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f016.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 17,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f017.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f017.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 18,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f018.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f018.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 19,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f019.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f019.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:19 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 20,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f020.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f020.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:20 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 21,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f021.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f021.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:21 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 22,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f022.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f022.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:22 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 23,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f023.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f023.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:23 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 24,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f024.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f024.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:24 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 25,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f025.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f025.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:25 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 26,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f026.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f026.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:26 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 27,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f027.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f027.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:27 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 28,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f028.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f028.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:28 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 29,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f029.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f029.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:29 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 30,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f030.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f030.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:30 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 31,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f031.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f031.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:31 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 32,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f032.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f032.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:32 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 33,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f033.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f033.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:33 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 34,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f034.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f034.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:34 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 35,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f035.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f035.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:35 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 36,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f036.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f036.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:36 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 37,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f037.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f037.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:37 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 38,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f038.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f038.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:38 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 39,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f039.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f039.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:39 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 40,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f040.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f040.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:40 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 41,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f041.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f041.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:41 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 42,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f042.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f042.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:42 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 43,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f043.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f043.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:43 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 44,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f044.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f044.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:44 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 45,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f045.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f045.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:45 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 46,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f046.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f046.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:46 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 47,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f047.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f047.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:47 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 48,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_sfc/f048.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f048.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:48 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             }
           ],
-          "availableFrames": []
+          "availableFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ]
         },
         "trc1_full_int": {
           "label": "Vertically integrated smoke",
-          "units": "kg/m^2",
+          "units": "kg/m^2 (proxy)",
           "frames": [
             {
               "frame": 0,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f000.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f000.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 1,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f001.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f001.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 2,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f002.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f002.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 3,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f003.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f003.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 4,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f004.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f004.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 5,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f005.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f005.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 6,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f006.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f006.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 7,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f007.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f007.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 8,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f008.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f008.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 9,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f009.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f009.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 10,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f010.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f010.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 11,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f011.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f011.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 12,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f012.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f012.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 13,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f013.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f013.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 14,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f014.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f014.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 15,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f015.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f015.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 16,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f016.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f016.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 17,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f017.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f017.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 18,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f018.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f018.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 19,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f019.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f019.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:19 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:19 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:19 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 20,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f020.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f020.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:20 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:20 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:20 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 21,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f021.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f021.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:21 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:21 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:21 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 22,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f022.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f022.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:22 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:22 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:22 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 23,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f023.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f023.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:23 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:23 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:23 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 24,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f024.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f024.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:24 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:24 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:24 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 25,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f025.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f025.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:25 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:25 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:25 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 26,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f026.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f026.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:26 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:26 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:26 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 27,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f027.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f027.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:27 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:27 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:27 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 28,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f028.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f028.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:28 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:28 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:28 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 29,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f029.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f029.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:29 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:29 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:29 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 30,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f030.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f030.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:30 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:30 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:30 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 31,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f031.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f031.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:31 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:31 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:31 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 32,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f032.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f032.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:32 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:32 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:32 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 33,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f033.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f033.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:33 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:33 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:33 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 34,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f034.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f034.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:34 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:34 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:34 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 35,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f035.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f035.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:35 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:35 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:35 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 36,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f036.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f036.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:36 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:36 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:36 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 37,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f037.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f037.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:37 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:37 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:37 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 38,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f038.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f038.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:38 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:38 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:38 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 39,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f039.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f039.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:39 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:39 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:39 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 40,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f040.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f040.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:40 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:40 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:40 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 41,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f041.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f041.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:41 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:41 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:41 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 42,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f042.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f042.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:42 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:42 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:42 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 43,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f043.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f043.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:43 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:43 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:43 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 44,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f044.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f044.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:44 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:44 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:44 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 45,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f045.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f045.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:45 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:45 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:45 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 46,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f046.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f046.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:46 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:46 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:46 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 47,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f047.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f047.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:47 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:47 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:47 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 48,
-              "url": null,
-              "cached": false,
-              "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+              "url": "./cache-raw/2026031418/long/trc1_full_int/f048.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/18/rrfs.t18z.natlev.3km.f048.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:48 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:48 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:48 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             }
           ],
-          "availableFrames": []
+          "availableFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ]
         }
       }
     }
   },
-  "maxFrame": 0,
-  "bounds": null,
+  "maxFrame": 18,
+  "bounds": [
+    [
+      -1.605785,
+      -179.99993599999996
+    ],
+    [
+      85.05112878,
+      179.999968
+    ]
+  ],
   "layers": {
     "trc1_full_sfc": {
       "label": "Near-surface smoke",
@@ -1015,283 +1726,475 @@
       "frames": [
         {
           "frame": 0,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f000.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f000.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 1,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f001.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f001.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 2,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f002.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f002.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 3,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f003.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f003.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 4,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f004.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f004.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 5,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f005.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f005.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 6,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f006.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f006.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 7,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f007.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f007.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 8,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f008.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f008.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 9,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f009.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f009.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 10,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f010.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f010.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 11,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f011.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f011.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 12,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f012.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f012.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 13,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f013.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f013.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 14,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f014.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f014.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 15,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f015.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f015.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 16,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f016.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f016.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 17,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f017.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f017.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 18,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_sfc/f018.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f018.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         }
       ],
-      "availableFrames": []
+      "availableFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
     },
     "trc1_full_int": {
       "label": "Vertically integrated smoke",
-      "units": "kg/m^2",
+      "units": "kg/m^2 (proxy)",
       "frames": [
         {
           "frame": 0,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f000.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f000.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 1,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f001.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f001.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 2,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f002.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f002.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 3,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f003.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f003.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 4,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f004.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f004.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 5,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f005.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f005.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 6,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f006.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f006.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 7,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f007.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f007.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 8,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f008.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f008.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 9,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f009.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f009.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 10,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f010.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f010.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 11,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f011.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f011.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 12,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f012.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f012.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 13,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f013.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f013.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 14,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f014.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f014.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 15,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f015.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f015.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 16,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f016.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f016.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 17,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f017.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f017.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 18,
-          "url": null,
-          "cached": false,
-          "error": "message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+          "url": "./cache-raw/2026031420/hourly/trc1_full_int/f018.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260314/20/rrfs.t20z.natlev.3km.f018.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         }
       ],
-      "availableFrames": []
+      "availableFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
     }
   },
   "logs": [
-    "discovered runtime 2026031321 from RRFS S3 listing",
-    "using runtime 2026031321 via RRFS S3 idx byte ranges (hourly)",
-    "failed trc1_full_sfc F000: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F001: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F002: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F003: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F004: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F005: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F006: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F007: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F008: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F009: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F010: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F011: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F012: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F013: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F014: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F015: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F016: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F017: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_sfc F018: message not found in idx for matchers=[['MASSDEN', '8 m above ground', 'Particulate organic matter dry'], ['MASSDEN', '8 m above ground']]",
-    "failed trc1_full_int F000: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F001: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F002: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F003: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F004: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F005: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F006: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F007: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F008: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F009: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F010: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F011: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F012: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F013: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F014: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F015: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F016: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F017: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]",
-    "failed trc1_full_int F018: message not found in idx for matchers=[['COLMD', 'Particulate organic matter dry'], ['COLMD', 'entire atmosphere'], ['COLMD']]"
+    "discovered runtime 2026031420 from RRFS S3 listing (min_hours=19)",
+    "using runtime 2026031420 via RRFS S3 idx byte ranges (hourly)",
+    "cached trc1_full_sfc F000",
+    "cached trc1_full_sfc F001",
+    "cached trc1_full_sfc F002",
+    "cached trc1_full_sfc F003",
+    "cached trc1_full_sfc F004",
+    "cached trc1_full_sfc F005",
+    "cached trc1_full_sfc F006",
+    "cached trc1_full_sfc F007",
+    "cached trc1_full_sfc F008",
+    "cached trc1_full_sfc F009",
+    "cached trc1_full_sfc F010",
+    "cached trc1_full_sfc F011",
+    "cached trc1_full_sfc F012",
+    "cached trc1_full_sfc F013",
+    "cached trc1_full_sfc F014",
+    "cached trc1_full_sfc F015",
+    "cached trc1_full_sfc F016",
+    "cached trc1_full_sfc F017",
+    "cached trc1_full_sfc F018",
+    "cached trc1_full_int F000",
+    "cached trc1_full_int F001",
+    "cached trc1_full_int F002",
+    "cached trc1_full_int F003",
+    "cached trc1_full_int F004",
+    "cached trc1_full_int F005",
+    "cached trc1_full_int F006",
+    "cached trc1_full_int F007",
+    "cached trc1_full_int F008",
+    "cached trc1_full_int F009",
+    "cached trc1_full_int F010",
+    "cached trc1_full_int F011",
+    "cached trc1_full_int F012",
+    "cached trc1_full_int F013",
+    "cached trc1_full_int F014",
+    "cached trc1_full_int F015",
+    "cached trc1_full_int F016",
+    "cached trc1_full_int F017",
+    "cached trc1_full_int F018"
   ]
 }

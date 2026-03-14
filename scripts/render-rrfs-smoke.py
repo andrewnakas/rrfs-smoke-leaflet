@@ -4,6 +4,7 @@ import os
 import re
 import shutil
 import tempfile
+import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,6 +25,8 @@ MAX_SHORT_FRAME = 18
 MAX_LONG_FRAME = 48
 REQUEST_TIMEOUT = 60
 DOWNLOAD_TIMEOUT = 300
+HTTP_RETRIES = 4
+HTTP_BACKOFF_SECONDS = 2.0
 RRFS_REPROJ_CACHE = {}
 
 LAYERS = {
@@ -44,13 +47,35 @@ def log(msg):
     print(msg, flush=True)
 
 
+def http_get_with_retries(url: str, *, params=None, headers=None, timeout=REQUEST_TIMEOUT, stream=False):
+    last_error = None
+    for attempt in range(1, HTTP_RETRIES + 1):
+        try:
+            resp = requests.get(
+                url,
+                params=params,
+                headers=headers,
+                timeout=timeout,
+                stream=stream,
+            )
+            resp.raise_for_status()
+            return resp
+        except requests.RequestException as exc:
+            last_error = exc
+            if attempt == HTTP_RETRIES:
+                break
+            sleep_s = HTTP_BACKOFF_SECONDS * attempt
+            log(f'HTTP retry {attempt}/{HTTP_RETRIES - 1} for {url}: {exc}; sleeping {sleep_s:.1f}s')
+            time.sleep(sleep_s)
+    raise RuntimeError(f'HTTP request failed after {HTTP_RETRIES} attempts for {url}: {last_error}') from last_error
+
+
 def _s3_list(prefix: str) -> str:
-    resp = requests.get(
+    resp = http_get_with_retries(
         f'{RRFS_S3_BUCKET}/',
         params={'delimiter': '/', 'prefix': prefix},
         timeout=REQUEST_TIMEOUT,
     )
-    resp.raise_for_status()
     return resp.text
 
 
@@ -100,9 +125,7 @@ def build_rrfs_key(cycle_date: str, cycle_hour: str, forecast_hour: int) -> str:
 
 
 def parse_idx_entries(idx_url: str):
-    resp = requests.get(idx_url, timeout=REQUEST_TIMEOUT)
-    if resp.status_code != 200:
-        raise RuntimeError(f'idx fetch failed: {idx_url} ({resp.status_code})')
+    resp = http_get_with_retries(idx_url, timeout=REQUEST_TIMEOUT)
 
     rows = []
     for line in resp.text.strip().splitlines():
@@ -150,8 +173,7 @@ def select_smoke_entries(rows, layer_key):
 
 def download_entry_bytes(grib_url: str, entry: dict) -> bytes:
     headers = {'Range': f'bytes={entry["start"]}-{"" if entry["end"] is None else entry["end"]}'}
-    resp = requests.get(grib_url, headers=headers, timeout=DOWNLOAD_TIMEOUT)
-    resp.raise_for_status()
+    resp = http_get_with_retries(grib_url, headers=headers, timeout=DOWNLOAD_TIMEOUT)
     return resp.content
 
 
@@ -266,10 +288,11 @@ def fetch_layer_slice(cycle_date: str, cycle_hour: str, forecast_hour: int, laye
         finally:
             os.unlink(tmp_path)
 
-    arrays = []
+    values = None
     lats = lons = None
     metas = []
-    for entry in entries:
+    for idx, entry in enumerate(entries, start=1):
+        log(f'[{cycle_date}{cycle_hour}] {layer_key} F{forecast_hour:03d}: level {idx}/{len(entries)}')
         with tempfile.NamedTemporaryFile(delete=False, suffix='.grib2') as tmp:
             tmp.write(download_entry_bytes(grib_url, entry))
             tmp_path = tmp.name
@@ -280,12 +303,12 @@ def fetch_layer_slice(cycle_date: str, cycle_hour: str, forecast_hour: int, laye
             if lats is None:
                 lats, lons = grb.latlons()
                 lons = np.where(lons > 180, lons - 360, lons)
-            arrays.append(arr)
+                values = np.zeros_like(arr, dtype=np.float64)
+            values += np.nan_to_num(arr, nan=0.0, posinf=0.0, neginf=0.0)
             metas.append(entry['meta'])
             grbs.close()
         finally:
             os.unlink(tmp_path)
-    values = np.nansum(np.stack(arrays, axis=0), axis=0)
     return values, lats, lons, grib_url, metas
 
 

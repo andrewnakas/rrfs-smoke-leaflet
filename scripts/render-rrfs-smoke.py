@@ -241,14 +241,10 @@ def generate_png_from_grib(values, lats, lons, scale_max, output_path):
     if not np.any(alpha):
         raise RuntimeError('tile fully transparent')
 
-    rows = np.where(alpha.max(axis=1) > 0)[0]
-    cols = np.where(alpha.max(axis=0) > 0)[0]
-    r0, r1 = int(rows[0]), int(rows[-1])
-    c0, c1 = int(cols[0]), int(cols[-1])
-    cropped = np.flipud(rgba[r0:r1 + 1, c0:c1 + 1])
+    full_rgba = np.flipud(rgba)
 
-    x_min, x_max = reproj['x_grid'][c0], reproj['x_grid'][c1]
-    y_min, y_max = reproj['y_grid'][r0], reproj['y_grid'][r1]
+    x_min, x_max = reproj['x_grid'][0], reproj['x_grid'][-1]
+    y_min, y_max = reproj['y_grid'][0], reproj['y_grid'][-1]
     lon_tl, lat_tl = reproj['transformer'].transform(x_min, y_max, direction='INVERSE')
     lon_tr, lat_tr = reproj['transformer'].transform(x_max, y_max, direction='INVERSE')
     lon_bl, lat_bl = reproj['transformer'].transform(x_min, y_min, direction='INVERSE')
@@ -262,7 +258,7 @@ def generate_png_from_grib(values, lats, lons, scale_max, output_path):
     }
 
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-    Image.fromarray(cropped, 'RGBA').save(output_path, 'PNG', optimize=True, compress_level=9)
+    Image.fromarray(full_rgba, 'RGBA').save(output_path, 'PNG', optimize=True, compress_level=9)
     return bounds
 
 

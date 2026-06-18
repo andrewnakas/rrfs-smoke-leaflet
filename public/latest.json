@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-18T05:08:52.282707+00:00",
-  "runtime": "2026061802",
+  "generatedAt": "2026-06-18T11:03:57.658605+00:00",
+  "runtime": "2026061809",
   "runtimeSource": "aws-noaa-rrfs-direct-byte-range",
   "modes": {
     "hourly": {
-      "runtime": "2026061802",
+      "runtime": "2026061809",
       "maxFrame": 18,
       "bounds": [
         [
@@ -17,8 +17,8 @@
         ]
       ],
       "logs": [
-        "discovered runtime 2026061802 from RRFS S3 listing (min_hours=19)",
-        "using runtime 2026061802 via RRFS S3 idx byte ranges (hourly)",
+        "discovered runtime 2026061809 from RRFS S3 listing (min_hours=19)",
+        "using runtime 2026061809 via RRFS S3 idx byte ranges (hourly)",
         "cached trc1_full_sfc F000",
         "cached trc1_full_sfc F001",
         "cached trc1_full_sfc F002",
@@ -31,8 +31,8 @@
         "cached trc1_full_sfc F009",
         "cached trc1_full_sfc F010",
         "cached trc1_full_sfc F011",
-        "failed trc1_full_sfc F012: HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx",
-        "failed trc1_full_sfc F013: HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2",
+        "cached trc1_full_sfc F012",
+        "cached trc1_full_sfc F013",
         "cached trc1_full_sfc F014",
         "cached trc1_full_sfc F015",
         "cached trc1_full_sfc F016",
@@ -50,8 +50,8 @@
         "cached trc1_full_int F009",
         "cached trc1_full_int F010",
         "cached trc1_full_int F011",
-        "failed trc1_full_int F012: HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx",
-        "failed trc1_full_int F013: HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2",
+        "cached trc1_full_int F012",
+        "cached trc1_full_int F013",
         "cached trc1_full_int F014",
         "cached trc1_full_int F015",
         "cached trc1_full_int F016",
@@ -65,165 +65,171 @@
           "frames": [
             {
               "frame": 0,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f000.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f000.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f000.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f000.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 1,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f001.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f001.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f001.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f001.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 2,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f002.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f002.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f002.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f002.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 3,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f003.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f003.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f003.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f003.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 4,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f004.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f004.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f004.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f004.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 5,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f005.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f005.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f005.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f005.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 6,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f006.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f006.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f006.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f006.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 7,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f007.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f007.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f007.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f007.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 8,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f008.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f008.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f008.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f008.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 9,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f009.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f009.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f009.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f009.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 10,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f010.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f010.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f010.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f010.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 11,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f011.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f011.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f011.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f011.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 12,
-              "url": null,
-              "cached": false,
-              "error": "HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx"
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f012.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f012.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 13,
-              "url": null,
-              "cached": false,
-              "error": "HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2"
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f013.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f013.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 14,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f014.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f014.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f014.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f014.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 15,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f015.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f015.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f015.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f015.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 16,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f016.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f016.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f016.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f016.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 17,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f017.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f017.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f017.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f017.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
             },
             {
               "frame": 18,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f018.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f018.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f018.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f018.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
               ]
@@ -242,6 +248,8 @@
             9,
             10,
             11,
+            12,
+            13,
             14,
             15,
             16,
@@ -255,9 +263,9 @@
           "frames": [
             {
               "frame": 0,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f000.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f000.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f000.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f000.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -266,9 +274,9 @@
             },
             {
               "frame": 1,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f001.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f001.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f001.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f001.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -277,9 +285,9 @@
             },
             {
               "frame": 2,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f002.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f002.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f002.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f002.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -288,9 +296,9 @@
             },
             {
               "frame": 3,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f003.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f003.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f003.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f003.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -299,9 +307,9 @@
             },
             {
               "frame": 4,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f004.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f004.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f004.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f004.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -310,9 +318,9 @@
             },
             {
               "frame": 5,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f005.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f005.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f005.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f005.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -321,9 +329,9 @@
             },
             {
               "frame": 6,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f006.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f006.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f006.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f006.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -332,9 +340,9 @@
             },
             {
               "frame": 7,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f007.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f007.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f007.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f007.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -343,9 +351,9 @@
             },
             {
               "frame": 8,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f008.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f008.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f008.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f008.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -354,9 +362,9 @@
             },
             {
               "frame": 9,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f009.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f009.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f009.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f009.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -365,9 +373,9 @@
             },
             {
               "frame": 10,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f010.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f010.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f010.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f010.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -376,9 +384,9 @@
             },
             {
               "frame": 11,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f011.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f011.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f011.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f011.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -387,21 +395,31 @@
             },
             {
               "frame": 12,
-              "url": null,
-              "cached": false,
-              "error": "HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx"
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f012.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f012.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 13,
-              "url": null,
-              "cached": false,
-              "error": "HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2"
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f013.png",
+              "cached": true,
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f013.na.grib2",
+              "meta": [
+                "MASSDEN:1 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:2 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+                "MASSDEN:3 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+              ]
             },
             {
               "frame": 14,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f014.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f014.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f014.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f014.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -410,9 +428,9 @@
             },
             {
               "frame": 15,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f015.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f015.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f015.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f015.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -421,9 +439,9 @@
             },
             {
               "frame": 16,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f016.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f016.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f016.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f016.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -432,9 +450,9 @@
             },
             {
               "frame": 17,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f017.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f017.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f017.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f017.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -443,9 +461,9 @@
             },
             {
               "frame": 18,
-              "url": "./cache-raw/2026061802/hourly/trc1_full_int/f018.png",
+              "url": "./cache-raw/2026061809/hourly/trc1_full_int/f018.png",
               "cached": true,
-              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f018.na.grib2",
+              "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f018.na.grib2",
               "meta": [
                 "MASSDEN:1 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
                 "MASSDEN:2 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -466,6 +484,8 @@
             9,
             10,
             11,
+            12,
+            13,
             14,
             15,
             16,
@@ -477,8 +497,8 @@
     }
   },
   "logs": [
-    "discovered runtime 2026061802 from RRFS S3 listing (min_hours=19)",
-    "using runtime 2026061802 via RRFS S3 idx byte ranges (hourly)",
+    "discovered runtime 2026061809 from RRFS S3 listing (min_hours=19)",
+    "using runtime 2026061809 via RRFS S3 idx byte ranges (hourly)",
     "cached trc1_full_sfc F000",
     "cached trc1_full_sfc F001",
     "cached trc1_full_sfc F002",
@@ -491,8 +511,8 @@
     "cached trc1_full_sfc F009",
     "cached trc1_full_sfc F010",
     "cached trc1_full_sfc F011",
-    "failed trc1_full_sfc F012: HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx",
-    "failed trc1_full_sfc F013: HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2",
+    "cached trc1_full_sfc F012",
+    "cached trc1_full_sfc F013",
     "cached trc1_full_sfc F014",
     "cached trc1_full_sfc F015",
     "cached trc1_full_sfc F016",
@@ -510,8 +530,8 @@
     "cached trc1_full_int F009",
     "cached trc1_full_int F010",
     "cached trc1_full_int F011",
-    "failed trc1_full_int F012: HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx",
-    "failed trc1_full_int F013: HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2",
+    "cached trc1_full_int F012",
+    "cached trc1_full_int F013",
     "cached trc1_full_int F014",
     "cached trc1_full_int F015",
     "cached trc1_full_int F016",
@@ -536,165 +556,171 @@
       "frames": [
         {
           "frame": 0,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f000.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f000.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f000.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f000.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 1,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f001.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f001.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f001.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f001.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 2,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f002.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f002.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f002.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f002.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 3,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f003.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f003.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f003.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f003.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 4,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f004.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f004.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f004.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f004.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 5,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f005.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f005.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f005.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f005.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 6,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f006.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f006.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f006.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f006.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 7,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f007.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f007.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f007.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f007.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 8,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f008.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f008.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f008.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f008.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 9,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f009.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f009.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f009.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f009.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 10,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f010.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f010.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f010.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f010.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 11,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f011.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f011.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f011.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f011.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 12,
-          "url": null,
-          "cached": false,
-          "error": "HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx"
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f012.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f012.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 13,
-          "url": null,
-          "cached": false,
-          "error": "HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2"
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f013.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f013.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 14,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f014.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f014.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f014.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f014.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 15,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f015.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f015.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f015.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f015.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 16,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f016.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f016.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f016.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f016.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 17,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f017.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f017.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f017.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f017.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
         },
         {
           "frame": 18,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_sfc/f018.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_sfc/f018.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f018.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f018.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
           ]
@@ -713,6 +739,8 @@
         9,
         10,
         11,
+        12,
+        13,
         14,
         15,
         16,
@@ -726,9 +754,9 @@
       "frames": [
         {
           "frame": 0,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f000.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f000.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f000.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f000.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:anl:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -737,9 +765,9 @@
         },
         {
           "frame": 1,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f001.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f001.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f001.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f001.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:1 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -748,9 +776,9 @@
         },
         {
           "frame": 2,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f002.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f002.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f002.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f002.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:2 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -759,9 +787,9 @@
         },
         {
           "frame": 3,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f003.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f003.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f003.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f003.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:3 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -770,9 +798,9 @@
         },
         {
           "frame": 4,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f004.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f004.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f004.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f004.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:4 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -781,9 +809,9 @@
         },
         {
           "frame": 5,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f005.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f005.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f005.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f005.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:5 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -792,9 +820,9 @@
         },
         {
           "frame": 6,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f006.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f006.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f006.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f006.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:6 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -803,9 +831,9 @@
         },
         {
           "frame": 7,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f007.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f007.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f007.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f007.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:7 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -814,9 +842,9 @@
         },
         {
           "frame": 8,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f008.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f008.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f008.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f008.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:8 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -825,9 +853,9 @@
         },
         {
           "frame": 9,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f009.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f009.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f009.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f009.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:9 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -836,9 +864,9 @@
         },
         {
           "frame": 10,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f010.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f010.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f010.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f010.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:10 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -847,9 +875,9 @@
         },
         {
           "frame": 11,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f011.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f011.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f011.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f011.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:11 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -858,21 +886,31 @@
         },
         {
           "frame": 12,
-          "url": null,
-          "cached": false,
-          "error": "HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f012.na.grib2.idx"
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f012.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f012.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:12 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 13,
-          "url": null,
-          "cached": false,
-          "error": "HTTP request failed after 4 attempts for https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2: 404 Client Error: Not Found for url: https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f013.na.grib2"
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f013.png",
+          "cached": true,
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f013.na.grib2",
+          "meta": [
+            "MASSDEN:1 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:2 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
+            "MASSDEN:3 hybrid level:13 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06"
+          ]
         },
         {
           "frame": 14,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f014.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f014.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f014.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f014.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:14 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -881,9 +919,9 @@
         },
         {
           "frame": 15,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f015.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f015.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f015.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f015.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:15 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -892,9 +930,9 @@
         },
         {
           "frame": 16,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f016.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f016.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f016.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f016.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:16 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -903,9 +941,9 @@
         },
         {
           "frame": 17,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f017.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f017.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f017.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f017.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:17 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -914,9 +952,9 @@
         },
         {
           "frame": 18,
-          "url": "./cache-raw/2026061802/hourly/trc1_full_int/f018.png",
+          "url": "./cache-raw/2026061809/hourly/trc1_full_int/f018.png",
           "cached": true,
-          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/02/rrfs.t02z.natlev.3km.f018.na.grib2",
+          "source": "https://noaa-rrfs-pds.s3.amazonaws.com/rrfs_a/rrfs.20260618/09/rrfs.t09z.natlev.3km.f018.na.grib2",
           "meta": [
             "MASSDEN:1 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
             "MASSDEN:2 hybrid level:18 hour fcst:aerosol=Particulate organic matter dry:aerosol_size <2.5e-06",
@@ -937,6 +975,8 @@
         9,
         10,
         11,
+        12,
+        13,
         14,
         15,
         16,
